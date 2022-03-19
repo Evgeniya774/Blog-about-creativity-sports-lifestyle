@@ -356,13 +356,18 @@ margin-bottom: 10px;
   padding: 0 15px;
 }
 
-
+@media (min-width: 641px) and (max-width: 1199px){
+	.block {
+		width: 91%;
+	}
+		
+}
 
 .main-aside {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 117px;
+  margin-bottom: 60px;
 }
 
  @media (max-width: 640px){
@@ -378,7 +383,11 @@ margin-bottom: 10px;
   gap: 55px;
 	}
  
-
+@media (min-width: 641px) and (max-width: 1199px){
+.content {
+    margin-right: 35px;
+	}
+}
 .card {
   display: flex;
   flex-direction: row;
@@ -404,6 +413,13 @@ width: 100%;
 .card-content {
   margin-left: 30px;
 }
+
+@media (min-width: 641px) and (max-width: 1199px){
+.card-content {
+    margin-left: 0px;
+	}
+}
+
 
 .list-categories {
   display: flex;
@@ -781,37 +797,84 @@ h4 {
 
 /*Наши изделия*/
 
+.products-title{
+  text-align: center;
+  font-size: 20px;
+  color: #0f0d0e;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+ }
+
+.products-title:after {
+  content: "";
+  display: block;
+  width: 66px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #b59f5b;
+  margin-left: auto;
+  margin-right: auto;
+}	
+
+
 .our-products{
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	
+	justify-content: space-between;
+	column-gap: 4%;      
 }
 
-@media (max-width: 1199px){
+@media (min-width: 641px) and (max-width: 1199px){
 .our-products {
+	flex-flow: row wrap;
+	}
+}
+
+@media (max-width: 640px){
+.our-products {
+	    
 	flex-direction: column;
 	}
 }
 
 
 .product-card{
-	width: 33.3%;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width: 100%;
 	
-	margin-right: 5%;
-    margin-left: 5%;
 }
 
+@media (min-width: 641px) and (max-width: 1199px){
+.product-card {
+    width: 40%;
+    margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 640px){
+.product-card {
+	width: 100%;
+	margin-bottom: 25px;
+	}
+}
+
+
+.product-foto{
+	margin: auto;
+	width: 80%;
+}
 
 .product-content{
-	padding: 40px 12% 25px 12%;
-    margin-top: -40px;
-    border: 3px solid #b59f5b;
-	margin-left: -9%;
-    margin-right: -9%;
+	padding: 40px 20px 25px 20px;
+    margin-top: -30px;
+	border: 3px solid #b59f5b;
+	flex-grow: 1;
 }
 
-
+.product-content:after{
+	 border: 3px solid #b59f5b;
+}
 
 .product-name{
 	font-size: 20px;
@@ -820,6 +883,8 @@ h4 {
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
+
 
 .product-name:hover {
   color: #b59f5b;
@@ -830,6 +895,13 @@ h4 {
 	color: #0f0d0e;
 	font-weight: 400;
 }
+
+.product-text p{
+	
+	margin-top: -10px;
+}
+
+
 
 .product-text p span a{
 color: #b59f5b;
@@ -868,6 +940,7 @@ font-size: 14px;
 color: #ffffff;
 font-weight: 700;
 text-transform: uppercase;
+border: none;
 }
 
 .button-shop:hover {
@@ -918,27 +991,27 @@ text-transform: uppercase;
 }
 
 .socials-link-pinterest {
-  background-image: url(..svg/001-pinterest.svg);
+  background-image: url(../svg/001-pinterest.svg);
   background-repeat: no-repeat;
 }
 
 .socials-link-facebook {
-  background-image: url(..svg/002-facebook-logo.svg);
+  background-image: url(../svg/002-facebook-logo.svg);
   background-repeat: no-repeat;
 }
 
 .socials-link-tumblr {
-  background-image: url(..svg/003-tumblr.svg);
+  background-image: url(../svg/003-tumblr.svg);
   background-repeat: no-repeat;
 }
 
 .socials-link-twitter {
-  background-image: url(..svg/004-twitter.svg);
+  background-image: url(../svg/004-twitter.svg);
   background-repeat: no-repeat;
 }
 
 .socials-link-instagram {
-  background-image: url(..svg/005-instagram.svg);
+  background-image: url(../svg/005-instagram.svg);
   background-repeat: no-repeat;
 }
 
