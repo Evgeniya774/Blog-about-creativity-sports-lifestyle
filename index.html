@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Блог о творчестве, спорте, и образе жизни</title>
 </head>
@@ -27,7 +27,11 @@
         </ul>
       </nav>
     </div>
-		
+	
+	
+	<a href="#0" class="logo-mobile">
+				<img class="logo-img" src="svg/noemi-logo.svg" alt="Логотип блога Noemi">
+	</a>	
     <div class="headline">
       <h1>блог о творчестве, спорте, и образе жизни</h1>
     </div>
@@ -40,7 +44,7 @@
 <span><h2 class="trend-title">Сейчас в тренде</h2></span>
 <section class="trends">
   <div class="trend-cards">
-    <article class="trend-card">
+    <article class="trend-card trends-garden">
 		<div class="trend-description">
 			<nav class="links-categories">
 				<ul class="list-categories">
@@ -50,13 +54,10 @@
 			</nav>
 			<span><h3><a href="#0" class="trend-name">Сейчас в тренде: сад на подоконнике</a></h3></span>  
 		</div>
-		<div class="trend-foto">
-			<a href="#0">
-            <img src="images/trend1.jpg" alt="зелень на подоконнике"></a>
-        </div>
+		
     </article>
 	
-    <article class="trend-card">
+    <article class="trend-card trends-cheese">
 		<div class="trend-description">
 			<nav class="links-categories">
 				<ul class="list-categories">
@@ -65,13 +66,11 @@
 			</nav>
 			<span><h3><a href="#0" class="trend-name">Сыры на красивых картинках из интернета и какие они на вкус?</a></h3></span>
 		</div>	
-	  <div class="trend-foto">
-			<a href="#0">
-            <img src="images/trend2.jpg" alt="разнообразие сыров"></a>
-        </div>
+	 
     </article>
 	
-    <article class="trend-card">
+    <article class="trend-card trends-trip">
+		
 		<div class="trend-description">
 			<nav class="links-categories">
 				<ul class="list-categories">
@@ -81,13 +80,11 @@
 			</nav>
 			<span><h3><a href="#0" class="trend-name">Собираемся в первый поход в горы</a></h3></span>  
 		</div>
-		<div class="trend-foto">
-			<a href="#0">
-            <img src="images/trend3.jpg" alt="долина"></a>
-        </div>
+		
+		
     </article>
 	
-    <article class="trend-card">
+    <article class="trend-card trends-lemon">
 		<div class="trend-description">
 			<nav class="links-categories">
 				<ul class="list-categories">
@@ -97,10 +94,7 @@
 			</nav>
 			<span><h3><a href="#0" class="trend-name">Сейчас в тренде: сколько витамина С в лимонах?</a></h3></span>  
 		</div>
-		<div class="trend-foto">
-			<a href="#0">
-            <img src="images/trend4.jpg" alt="лимоны"></a>
-        </div>
+		
     </article>
   </div>    
 </section>          
@@ -114,7 +108,7 @@
 
       <!-- Карточка 1 -->
 
-      <article class="card">
+      <article class="card">	
         <div class="card-foto">
           <a href="#0">
             <img src="images/last-post1.jpg" alt="Человек, идущий по пляжу"></a>
@@ -474,45 +468,44 @@
 
 <!-- Фидбек -->
 
-	<div class="feedback visually-hidden">
-        <p class="visually-hidden">Форма для фидбека</p>
-        <h3 class="title-feedback">Ваш фидбек</h3>
-        <form class="feedback-subs">
-			<div class="form-row">
-				<label class="feedback-hint">Как часто вы заходите на сайт?</label>
-					<select class="how-often">    
-						<option selected>Почти каждый день</option>    
-						<option>Раз в неделю</option>    
-						<option>Реже, чем раз в неделю</option>
-					</select>
-			</div>	
-			
-			<div class="form-row">
-				<span class="feedback-hint">Вы подписаны на e-mail рассылку?</span>
-				<label class="radio-group">    
-					<input type="radio" class="radio" name="radio-group">    
-					<span class="radio-group-text">Да</span>  
-				</label>  
-				<label class="radio-group">    
-						<input type="radio" class="radio" name="radio-group">    
-						<span class="radio-group-text">Нет</span>  
-				</label>
-			</div> 	
-					
-		
-			<div class="form-row">
-				<label class="feedback-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?
-					<textarea class="form-textarea">Может, больше рецептов?</textarea>
-				</label>
+			<div class="pop-up visually-hidden">
+			<div class="pop-up-container">
+				<div class="feedback">
+					<h2 class="section-title">Ваш фидбэк</h2>
+					<form class="feedback-form">
+						<div class="form-row">
+							<label class="form-label" for="question-select-id">Как часто вы заходите на сайт?</label>
+							<select class="question-select" for="question-select-id">
+								<option selected>Почти каждый день</option>
+								<option>Почти каждую неделю</option>
+								<option>Почти каждый месяц</option>
+							</select>
+						</div>
+						<div class="form-row">
+							<span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+							<label class="radio-group">
+								<input type="radio" class="radio" name="radio-group" checked>
+								<span class="radio-group-text">Да</span>
+							</label>
+							<label class="radio-group">
+								<input type="radio" class="radio" name="radio-group">
+								<span class="radio-group-text">Нет</span>
+							</label>
+						</div>
+						<div class="form-row">
+							<label class="form-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+								<textarea class="form-textarea">Может, больше рецептов?</textarea>
+							</label>
+						</div>
+						<button class="send-button" type="button">Отправить</button>
+					</form>
+				</div>
+
+				<button class="popup-close" type="button"><img class="popup-close-img" src="svg/form-x.svg"
+						alt="Закрыть окно"></button>
 			</div>
-			
-			<button type="submit" class="feedback-button">Отправить</button>
-        </form>
-	</div>
-	<button class="popup-close" type="button">
-		<img class="popup-close-img" src="svg/form-x.svg" alt="Закрыть окно">
-	</button>  
-	</div>
+		</div>
+
 	
 	
 </body>
