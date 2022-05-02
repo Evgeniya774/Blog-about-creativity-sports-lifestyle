@@ -1236,7 +1236,7 @@ border: none;
 	right: 0;
 	width: 15px;
 	height: 15px;
-	background-color: transparent;
+	
 	border: none;
 	background-image: url("../svg/form-x.svg");
 }
