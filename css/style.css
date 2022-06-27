@@ -311,6 +311,11 @@ display: none;
   padding-bottom: 20px;
   border-bottom: 5px solid #b59f5b;
   	}	
+
+.trend-cards{
+		
+		position: relative;
+	}	
 }
 
 
@@ -322,12 +327,7 @@ display: none;
    column-gap: 0.4%;
 }
 
-@media screen and (max-width: 640px) {
-	.trend-cards{
-		
-		position: relative;
-	}
-}
+
 	
 
 .trend-card{
@@ -380,6 +380,7 @@ display: none;
 .trend-card {
     width: 45.8%;
 	margin-bottom: 0.4%;
+	padding: 5% 2% 2%;
 	}
 	
 		
@@ -428,17 +429,15 @@ margin-bottom: 10px;
 /*Основной блок страницы*/
 
 .block {
-  margin-top: 65px;
-  margin-bottom: 70px;
-  
-  max-width: 85%;
-  padding: 0 110px;
+  margin: 65px auto 70px;
+  width: 1170px;
+  padding: 0 15px;
 }
 
 @media (min-width: 641px) and (max-width: 1199px){
 .block {
 	width: 91%;
-	padding: 0 75px;
+	
 	}
 		
 }
@@ -452,8 +451,7 @@ margin-bottom: 10px;
 
  @media screen and (max-width: 640px) {
 .block {
-	width: 91%;
-	padding: 0 20px;
+	width: calc(100% - 30px);
 	margin-left: auto;
     margin-right: auto;
 	}
@@ -1063,6 +1061,16 @@ border: none;
 
 /*Подвал*/
 
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+    padding: 0 15px;
+    z-index: 1;
+	}
+	
+
 @media (min-width: 641px) and (max-width: 1199px){
 .container {
     width: 91%;
@@ -1155,6 +1163,7 @@ border: none;
 	background-color: white;
 	margin-left:auto;
 	margin-right: auto;
+	overflow: scroll;
 }
 
 @media (min-width: 641px) and (max-width: 1199px){
