@@ -394,12 +394,15 @@ display: none;
 }
 .product-card:first-child .product-content {
 	background: url(https://evgeniya774.github.io/Blog-about-creativity-sports-lifestyle/images/shop-item-mobile1.jpg);
+	background-size: cover;
 }
 .product-card .product-content {
 	background: url(https://evgeniya774.github.io/Blog-about-creativity-sports-lifestyle/images/shop-item-mobile2.jpg);
+	background-size: cover;
 }
 .product-card:last-child .product-content {
 	background: url(https://evgeniya774.github.io/Blog-about-creativity-sports-lifestyle/images/shop-item-mobile3.jpg);
+	background-size: cover;
 }
 .card-foto img {
 	max-height: 200px;
