@@ -387,10 +387,10 @@ display: none;
 
 @media screen and (max-width: 640px) {
 .product-foto {
-	width: 100%;
+	display: none;
 }
 .product-content {
-	background: #f7f7f7d6;
+    margin-top: 0;
 }
 .card-foto img {
 	max-height: 200px;
