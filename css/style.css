@@ -390,7 +390,7 @@ display: none;
 	z-index: 1;
 	position: relative;
 }
-.product-content::after {
+.product-card .product-content::after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -406,7 +406,7 @@ display: none;
 .product-card .product-name, .product-card .product-text, .product-card .old-cost, .product-card .new-cost {
 	color: #fffefe;
 }
-.product-text p span a {
+.product-card .product-text p span a {
 	color: #f5c11a;
 }
 .product-foto {
