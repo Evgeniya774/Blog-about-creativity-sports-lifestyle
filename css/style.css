@@ -386,6 +386,29 @@ display: none;
 }
 
 @media screen and (max-width: 640px) {
+.product-card .product-content, .product-header, .product-text, .cost-buy {
+	z-index: 1;
+	position: relative;
+}
+.product-content::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000000;
+	opacity: 0.6;
+	z-index: 0;
+	border: none;	
+}
+.product-card .product-name, .product-card .product-text, .product-card .old-cost, .product-card .new-cost {
+	color: #fffefe;
+}
+.product-text p span a {
+	color: #f5c11a;
+}
 .product-foto {
 	display: none;
 }
