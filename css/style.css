@@ -386,11 +386,16 @@ display: none;
 }
 
 @media screen and (max-width: 640px) {
+.card-foto img {
+max-height: 200px;
+object-fit: cover;
+object-position: center center;
+}
 .trend-card {
     width: 100%;
     margin-right: 0;
     margin-bottom: 3px;
-	height: 390px;
+	height: 180px;
 	}
 	
 	
